@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme{
-  --color-bg-gray-neutral: #F1F3F5;
+  --color-gray-neutral-100: #F1F3F5;
   --color-gray-neutral-200: #E9ECEF;
   --color-gray-neutral-300: #DEE2E6;
   --color-gray-neutral-500: #8E99A4;
@@ -13,14 +13,60 @@
   --color-primary-slate-light: #122424;
   --color-primary-stone: #F1F1EC;
   --color-primary-acid-yellow: #E3FD7A;
-  --color-secondary-tial-light: #00A19C;
   --color-secondary-tial-light-100: #E4F2EF;
   --color-secondary-tial-light-200: #B5DAD4;
+  --color-secondary-tial-light-800: #00A19C;
   
+}
+
+@layer components{
+  .color-gray-neutral-100{
+    color: var(--color-gray-neutral-100);
+  }
+  .color-gray-neutral-200{
+    color: var(--color-gray-neutral-200);
+  }
+  .color-gray-neutral-300{
+    color: var(--color-gray-neutral-300);
+  }
+  .color-gray-neutral-500{
+    color: var(--color-gray-neutral-500);
+  }
+  .color-gray-neutral-600{
+    color: var(--color-gray-neutral-600);
+  }
+  .color-gray-neutral-700{
+    color: var(--color-gray-neutral-700);
+  }
+  .color-gray-neutral-750{
+    color: var(--color-gray-neutral-750);
+  }
+  .color-gray-neutral-800{
+    color: var(--color-gray-neutral-800);
+  }
+  .color-primary-slate{
+    color: var(--color-primary-slate);
+  }
+  .color-primary-slate-light{
+    color: var(--color-primary-slate-light);
+  }
+  .color-primary-stone{
+    color: var(--color-primary-stone);
+  }
+  .color-primary-acid-yellow{
+    color: var(--color-primary-acid-yellow);
+  }
+  .color-secondary-tial-light-100{
+    color: var(--color-secondary-tial-light-100);
+  }
+  .color-secondary-tial-light-200{
+    color: var(--color-secondary-tial-light-200);
+  }
+  .color-secondary-tial-light-800{
+    color: var(--color-secondary-tial-light-800);
+  }
 }
 
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
