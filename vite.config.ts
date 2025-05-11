@@ -14,4 +14,28 @@ export default defineConfig({
       }),
       tailwindcss(),
   ],
+  build: {
+      lib: {
+          entry: 'src/payment-widget-furkan.ce.ts',
+          name: 'PaymentWidgetFurkan',
+          formats: ['es', 'umd'],
+      },
+      rollupOptions: {
+          external: ['vue'], // Make sure to externalize Vue as it's not bundled
+          output: [
+              {
+                  format: 'umd',
+                  entryFileNames: 'payment-widget-furkan.umd.js',
+                  name: 'PaymentWidgetFurkan', // 👈 REQUIRED for UMD
+                  globals: {
+                      vue: 'Vue',
+                  },
+              },
+              {
+                  format: 'es',
+                  entryFileNames: 'payment-widget-furkan.esm.js',
+              },
+          ],
+      }
+  }
 })

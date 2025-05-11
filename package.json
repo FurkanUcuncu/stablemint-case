@@ -1,8 +1,15 @@
 {
-  "name": "stablemint-case",
-  "private": true,
-  "version": "0.0.0",
+  "name": "payment-widget-furkan",
+  "owner": "Furkan Ucuncu",
+  "version": "0.3.0",
+  "description": "A Vue-based payment widget as a Web Component",
+  "main": "dist/payment-widget-furkan.umd.cjs",
+  "module": "dist/payment-widget-furkan.esm.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "customElements": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
