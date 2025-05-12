@@ -5,7 +5,7 @@
         :key="preset"
         :class="customClass"
         :style="customStyles"
-        class="px-8 py-2 rounded-full text-base font-semibold cursor-pointer max-[640px]:px-4 max-[640px]:py-1 max-[640px]:text-sm"
+        class="px-8 py-2 rounded-full text-custom-md font-semibold cursor-pointer max-[640px]:px-4 max-[640px]:py-1 max-[640px]:text-sm"
         @click="$emit('select', preset)"
     >
       {{ getCurrency(preset) }}

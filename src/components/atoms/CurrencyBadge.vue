@@ -8,7 +8,7 @@
         :class="imgClass ?? 'w-7 h-7 max-[640px]:w-5'"
     />
     <span
-        :class="labelClass ?? 'text-base text-primary-stone max-[640px]:text-sm'"
+        :class="labelClass ?? 'text-custom-md text-primary-stone max-[640px]:text-sm'"
     >
       {{ label }}
     </span>

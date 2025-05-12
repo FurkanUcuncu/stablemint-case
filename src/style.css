@@ -16,7 +16,12 @@
   --color-secondary-tial-light-100: #E4F2EF;
   --color-secondary-tial-light-200: #B5DAD4;
   --color-secondary-tial-light-800: #00A19C;
-  
+  --text-custom-xs: 12px;
+  --text-custom-base: 14px;
+  --text-custom-md: 16px;
+  --text-custom-lg: 18px;
+  --text-custom-3xl: 30px;
+  --font-custom: 450;
 }
 
 @layer components{
@@ -65,8 +70,43 @@
   .color-secondary-tial-light-800{
     color: var(--color-secondary-tial-light-800);
   }
+  
+  .text-custom-xs{
+    font-size: var(--text-custom-xs);
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+  
+  .text-custom-base{
+    font-size: var(--text-custom-base);
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  
+  .text-custom-md{
+    font-size: var(--text-custom-md);
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+  
+  .text-custom-lg{
+    font-size: var(--text-custom-lg);
+    line-height: 30px;
+    letter-spacing: 0; 
+  }
+  
+  .text-custom-3xl{
+    font-size: var(--text-custom-3xl);
+    line-height: 46px;
+    letter-spacing: 0;
+  }
+  
+  .font-custom{
+    font-weight: var(--font-custom);
+  }
 }
 
 *{
   box-sizing: border-box;
 }
+

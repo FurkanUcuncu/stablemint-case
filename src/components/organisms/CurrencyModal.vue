@@ -6,7 +6,7 @@
   >
     <div @click.stop class="bg-white px-4 pt-6 pb-4 rounded-xl shadow-xl w-[400px] max-[640px]:w-11/12">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="font-semibold text-lg max-[640px]:text-base">Select Currency</h2>
+        <h2 class="font-semibold text-custom-lg max-[640px]:text-base">Select Currency</h2>
         <BaseClose
             @click="closeModal"
             width="11.67"
@@ -23,11 +23,11 @@
       >
         <CurrencyBadge
             imgClass="w-10 h-10 max-[640px]:w-7"
-            labelClass="text-primary-slate max-[640px]:text-sm"
+            labelClass="text-primary-slate text-custom-md max-[640px]:text-sm"
             :icon="option.icon"
             :label="option.label"
         />
-        <span class="text-gray-500 text-xs">{{ option.desc }}</span>
+        <span class="text-gray-500 text-custom-xs">{{ option.desc }}</span>
       </div>
     </div>
   </div>

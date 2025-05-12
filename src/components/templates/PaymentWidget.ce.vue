@@ -14,14 +14,14 @@
         <h1
             :style="customStyles?.title"
             :class="customClass?.title"
-            class="text-2xl font-bold mb-[12px] text-primary-slate-light max-[640px]:text-xl"
+            class="text-custom-3xl font-custom mb-[12px] text-primary-slate-light max-[640px]:text-xl"
         >
           Exchange Calculator
         </h1>
         <p
             :style="customStyles?.subtitle"
             :class="customClass?.subtitle"
-            class="mb-6 text-gray-neutral-600 max-[640px]:text-sm"
+            class="mb-6 text-custom-md text-gray-neutral-600 max-[640px]:text-sm"
         >
           Calculate how many dollars you need to pay
         </p>

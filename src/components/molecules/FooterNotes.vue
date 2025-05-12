@@ -3,7 +3,7 @@
     <li 
         v-for="(note, index) in notes"
         :key="index"
-        class="flex items-center gap-2 text-gray-neutral-600 text-xs"
+        class="flex items-center gap-2 text-gray-neutral-600 text-custom-xs"
     >
       <img :src="CheckIcon" alt="check-icon">
       {{ note }}

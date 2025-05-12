@@ -13,13 +13,13 @@
       max-[640px]:p-2 max-[640px]:h-auto"
   >
     <div class="flex flex-wrap gap-1">
-      <div class="text-nowrap text-base max-[640px]:text-sm">You are paying </div>
-      <div class="font-semibold text-lg max-[640px]:text-sm">
+      <div class="text-nowrap text-custom-md max-[640px]:text-sm">You are paying </div>
+      <div class="font-semibold text-custom-lg max-[640px]:text-sm">
         {{ amount > 0 ? amount : '--' }} {{ selectedCurrency.label }} for {{ (amount > 0 ? (amount * usdToSelectedRate).toFixed(2) : '--') }} {{ baseCurrency }}
       </div>
     </div>
     <p 
-        class="text-sm text-gray-neutral-600 max-[640px]:mt-2"
+        class="text-custom-base text-gray-neutral-600 max-[640px]:mt-2"
     >
       1 {{ selectedCurrency.label }} = {{ usdToSelectedRate }} {{ baseCurrency }}
     </p>

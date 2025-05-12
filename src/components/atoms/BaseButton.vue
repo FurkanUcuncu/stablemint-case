@@ -2,7 +2,7 @@
   <button
       @click="click"
       :style="customStyles"
-      class="w-full h-14 rounded-full text-[18px] 
+      class="w-full h-14 rounded-full text-custom-lg font-custom
       cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed max-[640px]:text-sm max-[640px]:h-10"
       :disabled="disabled"
       :class="customClass"
