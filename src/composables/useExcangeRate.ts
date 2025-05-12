@@ -16,8 +16,7 @@ export const useExchangeRate = (apiKey: string) => {
         queryKey: computed(() => [QUERY_KEY.exchangeRate, currencyLabel.value]),
         queryFn: () => fetchExchangeRate(apiKey),
         enabled: isEnabled,
-        staleTime: 1000 * 60,
-        retry: false
+        staleTime: 1000 * 60
     });
     
     watchEffect(() => {
